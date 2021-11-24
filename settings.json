@@ -1,0 +1,18 @@
+{
+	"workbench.startupEditor": "none",
+	"editor.minimap.enabled": false,
+	"editor.tabSize": 2,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false,
+	"files.eol": "\n",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+	"editor.formatOnPaste": false,
+	"editor.formatOnSave": true,
+	"eslint.enable": true,
+	"eslint.alwaysShowStatus": true,
+	"eslint.format.enable": false,
+	"eslint.run": "onSave",
+	"prettier.requireConfig": true,
+	"npm.enableScriptExplorer": true
+}

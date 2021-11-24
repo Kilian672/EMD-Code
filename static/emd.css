@@ -1,0 +1,531 @@
+/*Default values*/
+* {
+	box-sizing: border-box;
+	border-width: 0;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	overflow: hidden;
+}
+
+/*CSS Grid*/
+
+/* global grid: header/footer/three columns */
+.grid {
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	grid-template-columns: 1fr 55px 3fr;
+	grid-template-rows: 30px 30px 30px 3fr 230px 2fr 20px;
+	background-color: rgb(0, 0, 100);
+}
+
+#headerID {
+	grid-row: 1/2;
+	grid-column: 1/3;
+	background-color: rgb(0, 0, 100);
+	color: #e7e7e7;
+	font-size: 12pt;
+	padding-left: 12px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 30px;
+}
+
+#tabID {
+	grid-row: 2/3;
+	grid-column: 1/4;
+	background-color: rgb(0, 0, 100);
+	color: #e7e7e7;
+	font-size: 12pt;
+	padding-left: 12px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 30px;
+}
+
+#GraphButtons {
+	float: right;
+	padding-right: 20px;
+}
+
+.tab {
+	background-color: rgb(0, 0, 100);
+	color: #e7e7e7;
+	font-size: 12pt;
+	padding-left: 12px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 30px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 6px 6px 6px 6px;
+	color: #e7e7e7;
+	font-size: 12pt;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: white;
+	color: black;
+}
+
+/* Style the tab content */
+.tabcontent {
+	display: none;
+}
+
+.tabtab {
+	display: block;
+	background-color: white;
+	color: black;
+	font-size: 12pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	line-height: 30px;
+}
+
+/* Style the buttons inside the tab */
+.tabtab button {
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	text-decoration: none;
+	padding: 6px 6px 6px 6px;
+	color: black;
+	font-size: 12pt;
+}
+
+/* Create an active/current tablink class */
+.tabtab button.active {
+	background-color: white;
+	text-decoration: underline;
+	color: rgb(0, 0, 100);
+}
+
+#tab2ID {
+	border-color: rgb(0, 0, 100);
+	border-style: solid;
+	border-width: 2px;
+	border-bottom-style: none;
+	border-top-style: none;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	grid-row: 3/4;
+	grid-column: 1/3;
+	display: block;
+	text-align: center;
+}
+
+#ratesID {
+	grid-column: 1/2;
+	grid-row: 4/6;
+	display: block;
+	padding-top: 12px;
+	padding-left: 12px;
+	background-color: white;
+	border-width: 2px;
+	border-style: solid;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-left-radius: 15px;
+	border-color: rgb(0, 0, 100);
+	color: rgb(0, 0, 100);
+	font-size: 14pt;
+	overflow: auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#tab3ID {
+	text-align: right;
+	grid-column: 2/3;
+	grid-row: 4/6;
+	display: block;
+	border-bottom-right-radius: 15px;
+	border-width: 2px;
+	background-color: white;
+	border-color: rgb(0, 0, 100);
+	border-style: solid;
+	border-left-style: none;
+	border-top-style: none;
+	color: rgb(0, 0, 100);
+	font-size: 14pt;
+	overflow: auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	float: right;
+}
+
+.tabtabtab {
+	float: right;
+	display: block;
+	background-color: white;
+	color: black;
+	font-size: inherit;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	text-align: right;
+}
+.tabtabtab button {
+	padding: 3px 3px 3px 3px;
+	padding-left: 10px;
+	padding-right: 8px;
+	border-style: solid;
+	border-right-style: none;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-width: 3px;
+	border-color: rgb(0, 0, 100);
+	text-align: right;
+	background-color: inherit;
+	cursor: pointer;
+	color: black;
+	font-size: inherit;
+}
+
+/* Create an active/current tablink class */
+.tabtabtab button.active {
+	padding-left: 10px;
+	padding-right: 20px;
+	border-style: solid;
+	border-right-style: none;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-width: 3px;
+	border-color: rgb(0, 0, 100);
+	text-align: right;
+	background-color: inherit;
+	cursor: pointer;
+	color: black;
+	font-size: inherit;
+}
+
+#statesID {
+	grid-column: 1/3;
+	grid-row: 4/6;
+	display: block;
+	padding-top: 12px;
+	padding-left: 12px;
+	border-style: solid;
+	border-top-style: none;
+	background-color: white;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-width: 2px;
+	color: rgb(0, 0, 100);
+	font-size: 14pt;
+	overflow: auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.stateBoard {
+	display: inline-block;
+	height: 35px;
+	min-width: 150px;
+	max-width: 150px;
+	overflow: hidden;
+}
+.stateName {
+	display: inline-block;
+	min-width: 80px; /* or whatever width you want. */
+	max-width: 80px;
+	height: 35px;
+	overflow: hidden;
+}
+.stateText {
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	overflow: hidden;
+}
+
+.rateName {
+	display: inline-block;
+	min-width: 50px;
+	max-width: 50px;
+	height: 35px;
+	overflow: hidden;
+}
+.rateBoard {
+	display: inline-block;
+	height: 35px;
+	min-width: 150px;
+	max-width: 150px;
+	overflow: hidden;
+}
+
+.rateText {
+	display: inline-block;
+	width: 100px;
+	height: 35px;
+	overflow: hidden;
+}
+
+#footerID {
+	grid-column: 1/3;
+	grid-row: 5/6;
+	background-color: rgb(0, 0, 100);
+	color: #e7e7e7;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#fsmID {
+	grid-row: 3/7;
+	grid-column: 3/4;
+	border-radius: 15px;
+	border-width: 2px;
+	border-color: rgb(0, 0, 100);
+	border-style: solid;
+	background-color: white;
+	overflow: hidden;
+}
+#helpID {
+	grid-row: 6/7;
+	grid-column: 1/3;
+	padding-top: 12px;
+	padding-left: 12px;
+	border-radius: 15px;
+	border-width: 2px;
+	border-color: rgb(0, 0, 100);
+	border-style: solid;
+	background-color: rgb(190, 190, 190);
+	color: rgb(0, 0, 100);
+	font-size: 9pt;
+	font-style: italic;
+	overflow: auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#infoID {
+	border-radius: 50px;
+	border-width: 1px;
+	border-color: rgb(0, 0, 100);
+	border-style: solid;
+	background-color: rgb(190, 190, 190);
+	color: rgb(0, 0, 100);
+	font-size: 9pt;
+	font-style: italic;
+	overflow: auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	visibility: hidden;
+	position: absolute;
+	display: inline-block;
+}
+#odeID {
+	grid-row: 3/5;
+	grid-column: 1/3;
+	border-radius: 15px;
+	border-width: 2px;
+	border-color: rgb(0, 0, 100);
+	border-style: solid;
+	border-top-style: none;
+	background-color: white;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+	padding: 10px;
+	overflow: auto;
+}
+#inID {
+	grid-row: 5/6;
+	grid-column: 1/3;
+	padding: 0;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 2px;
+	border-radius: 15px;
+	border-width: 2px;
+	border-color: rgb(0, 0, 100);
+	border-style: solid;
+	background-color: white;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	overflow: auto;
+}
+
+#plotID {
+	grid-row: 3/7;
+	grid-column: 3/4;
+	border-radius: 15px;
+	border-width: 2px;
+	border-color: rgb(0, 0, 100);
+	border-style: solid;
+	background-color: white;
+}
+
+.odeEquation {
+	/* used in js */
+	display: block;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+	font-weight: lighter;
+	white-space: nowrap;
+}
+
+.switchMain {
+	position: relative;
+	display: inline-block;
+	width: 30px;
+	height: 18px;
+}
+.switchMain input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.sliderMain {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: lightgrey;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+.sliderMain:before {
+	position: absolute;
+	content: '';
+	height: 13px;
+	width: 13px;
+	left: 2px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: 0.4s;
+	transition: 0.4s;
+}
+input:checked + .sliderMain {
+	background-color: darkgray;
+	content: 'text';
+}
+input:checked + .sliderMain:before {
+	background-color: black;
+	content: '\f00c';
+}
+input:checked + .sliderMain:before {
+	-webkit-transform: translateX(13px);
+	-ms-transform: translateX(13px);
+	transform: translateX(13px);
+}
+/* Rounded sliders */
+.sliderMain.round {
+	border-radius: 17px;
+}
+.sliderMain.round:before {
+	border-radius: 50%;
+}
+
+#button {
+	background-color: white;
+	border: none;
+	color: rgb(0, 0, 100);
+	padding: 3px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	margin: 2px 0px;
+	border-radius: 30px;
+	margin-left: 5px;
+}
+#button2 {
+	background-color: white;
+	border: none;
+	color: rgb(0, 0, 100);
+	padding: 3px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	margin: 2px 0px;
+	border-radius: 30px;
+}
+
+#inputID {
+	width: 15vw;
+	height: 20vh;
+	padding-top: 12px;
+	padding-left: 12px;
+	border-radius: 15px;
+	border-width: 2px;
+	border-color: rgb(0, 0, 100);
+	border-style: solid;
+	background-color: rgb(190, 190, 190);
+	color: rgb(0, 0, 100);
+	font-size: 9pt;
+	font-style: italic;
+	overflow: auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.slider-checkbox {
+	position: relative;
+}
+
+.slider-checkbox input {
+	margin: 0px;
+	margin-top: 1px;
+	cursor: pointer;
+	opacity: 0;
+	-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+	filter: alpha(opacity=0);
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	position: absolute;
+	z-index: 1;
+	top: 0px;
+	left: 0px;
+	background: red;
+	width: 45px;
+	height: 20px;
+}
+
+.slider-checkbox input:checked + .label:before {
+	background-color: white;
+	content: 'Lin  ';
+	padding-left: 6px;
+}
+.slider-checkbox input:checked + .label:after {
+	left: 29px;
+}
+
+.slider-checkbox .label {
+	position: relative;
+	padding-left: 50px;
+}
+.slider-checkbox .label:before {
+	position: absolute;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	transition: background-color 0.3s, left 0.3s;
+	content: ' Log  ';
+	color: rgb(0, 0, 100);
+	box-sizing: border-box;
+	font-family: 'FontAwesome', sans-serif;
+	padding-left: 23px;
+	font-size: 12px;
+	line-height: 20px;
+	background-color: white;
+	left: 0px;
+	top: 0px;
+	height: 20px;
+	width: 48px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+.slider-checkbox .label:after {
+	position: absolute;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	transition: background-color 0.3s, left 0.3s;
+	content: '';
+	letter-spacing: 0px;
+	background: rgb(0, 0, 100);
+	left: 1px;
+	top: 1px;
+	height: 18px;
+	width: 18px;
+}

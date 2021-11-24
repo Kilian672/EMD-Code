@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Epidemic Model Designer</title>
+		<meta charset="utf-8" />
+		<!--Charset used in html-->
+		<link rel="stylesheet" type="text/css" href="/jsxgraph.css" />
+		<!--Charset used in html-->
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1">    Proper rendering for mobile devices-->
+		<!--Add additional meta tags like keywords, description, author-->
+		<script src="/jsxgraphcore.js"></script>
+		<script src="/jquery-3.5.1.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/emd.css" />
+		<!--CSS styles-->
+		<!--<meta name="viewport" content="width=device-width, initial-scale=1">    Proper rendering for mobile devices-->
+		<!--Add additional meta tags like keywords, description, author-->
+		<script src="/emd.js"></script>
+		<!--Javascript-->
+	</head>
+	<body>
+		<div class="grid">
+			<div id="headerID">Epidemic Model Designer</div>
+			<div id="tabID">
+				<div class="tab">
+					<button id="Designer">The Model.</button>
+					<button id="Simulator">The Simulation.</button>
+					<span id="GraphButtons"></span>
+				</div>
+			</div>
+			<div id="fsmID" class="tabcontent">
+				<canvas
+					id="canvasID"
+					tabindex="1"
+					width="2000px"
+					height="2000px"
+				></canvas>
+			</div>
+			<div id="odeID" class="tabcontent"></div>
+			<div id="inID" class="tabcontent"></div>
+			<div id="helpID"></div>
+			<div id="infoID"></div>
+			<div id="plotID" class="tabcontent" tabindex="1"></div>
+			<div id="tab2ID">
+				<div class="tabtab">
+					<button id="Rates">Transmission Rates</button>
+					<button id="Values">Initial Values</button>
+				</div>
+			</div>
+			<div id="tab3ID" tabindex="1">
+				<div id="tabtab3ID" class="tabtabtab">
+					<button>t<sub>0</sub></button>
+					<button class="tabtabtab active">t<sub>1</sub></button>
+				</div>
+			</div>
+			<div id="ratesID" tabindex="1"></div>
+			<div id="statesID" tabindex="1"></div>
+			<div id="footerID" class="tabcontent"></div>
+		</div>
+	</body>
+</html>
+
