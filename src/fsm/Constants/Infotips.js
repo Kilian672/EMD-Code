@@ -43,7 +43,7 @@ info.X =
 info.target = 
  'Choose a new target';
 info.source = 
- 'Choose a new source';
+ 'Choose a new source test';
 
 
 export default info;
